@@ -14,3 +14,10 @@ function buttonPrompt() {
 function buttonAlert() {
     alert('Yo amo JS');
 }
+
+function buttonSuma() {
+    let num1 =parseInt(prompt("Dame el primer número de la suma"));
+    let num2 =parseInt(prompt("Dame el segundo número de la suma"));
+    let suma = num1 + num2;
+    alert(`El resultado de la suma de ${num1} y ${num2} es ${suma}`);
+}
