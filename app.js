@@ -7,8 +7,10 @@ function buttonConsole() {
 }
 
 function buttonPrompt() {
-    
     let ciudad = prompt("Menciona una ciudad de Brasil");
     alert(`Estuve en ${ciudad} y me acordé de ti`);
+}
 
+function buttonAlert() {
+    alert('Yo amo JS');
 }
