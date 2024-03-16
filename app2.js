@@ -2,12 +2,22 @@ function saludo() {
     console.log("¡Hola, mundo!");
 }
 
-function saludoNombre() {
-    let nombre = prompt("Dame tu nombre");
+saludo();
+
+function saludoNombre(nombre) {
     console.log("¡Hola, " + nombre + "!");
 }
 
-function dobleNumero() {
-    let numero = parseInt(prompt("Dame un número"));
+saludoNombre('Brenda');
+
+function dobleNumero(numero) {
     return numero*2;
 }
+
+console.log(dobleNumero(4));
+
+function promedio(numero1, numero2, numero3) {
+    return (numero1 + numero2 + numero3)/3;
+}
+
+console.log(promedio(4, 2, 6));
