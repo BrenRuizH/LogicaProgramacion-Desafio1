@@ -21,3 +21,13 @@ function promedio(numero1, numero2, numero3) {
 }
 
 console.log(promedio(4, 2, 6));
+
+function mayor(numero1, numero2) {
+    if(numero1 > numero2) {
+        return numero1;
+    } else {
+        return numero2;
+    }
+}
+
+console.log(mayor(10, 2));
