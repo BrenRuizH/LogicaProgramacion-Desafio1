@@ -33,3 +33,11 @@ function areaPerimetroCircular(radio) {
 }
 
 console.log(areaPerimetroCircular(4));
+
+function tablaMultiplicar(numero) {
+    for (var i=1; i<=10; i++) {
+        console.log(numero + " X " + i + " = " + numero * i);
+    }
+}
+
+tablaMultiplicar(2);
