@@ -31,3 +31,9 @@ function mayor(numero1, numero2) {
 }
 
 console.log(mayor(10, 2));
+
+function multiplicar(numero) {
+    return numero * numero;
+}
+
+console.log(numero(7));
