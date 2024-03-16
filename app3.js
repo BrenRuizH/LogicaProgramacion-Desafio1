@@ -14,3 +14,9 @@ function valorFactorial (numero) {
 }
 
 console.log(valorFactorial(4));
+
+function dolaresApeso(dolar) {
+    return dolar * 16.72;
+}
+
+console.log(dolaresApeso(24));
