@@ -26,3 +26,10 @@ function areaPerimetro(altura, anchura) {
 }
 
 console.log(areaPerimetro(12, 16));
+
+function areaPerimetroCircular(radio) {
+    let pi = 3.14
+    return `Con radio de ${radio} y considerando Pi = ${pi}, corresponden a un perímetro de ${radio * (2 * pi)} y un área de ${pi * (Math.pow(radio, 2))}`;
+}
+
+console.log(areaPerimetroCircular(4));
