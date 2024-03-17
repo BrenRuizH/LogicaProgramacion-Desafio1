@@ -15,3 +15,9 @@ function reversa() {
 }
 
 reversa();
+
+function promedio(lista) {
+    return (lista.reduce((valorAn, valorAc) => {
+        return valorAn + valorAc;
+    }, 0))/lista.length;
+}
