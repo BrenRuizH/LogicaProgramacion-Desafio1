@@ -57,3 +57,15 @@ function posicion(lista, elemento) {
 }
 
 console.log(posicion(numeros, 5));
+
+function sumaListas(lista1, lista2) {
+    if(lista1.length !== lista2.length) {
+        return 'Las listas no son del mismo tamaño'
+    } else {
+        let suma = [];
+        for(i = 0; i < lista1.length; i++) {
+            suma.push = lista1[i] + lista2[i];
+        }
+    }
+    return suma;
+}
