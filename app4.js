@@ -1,5 +1,6 @@
 let listaGenerica = [];
 let numeros = [5, 15, 10];
+let numeros2 = [21, 7, 14];
 let lenguajesDeProgramacion = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
 
 lenguajesDeProgramacion.push('Java', 'Ruby', 'GoLang');
@@ -40,9 +41,10 @@ function maxMin(lista) {
 console.log(maxMin(numeros));
 
 function suma(lista) {
-    return lista.reduce((valorAn, valorAc) => {
+    let suma = lista.reduce((valorAn, valorAc) => {
         return valorAn + valorAc;
     }, 0);
+    return suma;
 }
 
 console.log(suma(numeros));
@@ -59,13 +61,25 @@ function posicion(lista, elemento) {
 console.log(posicion(numeros, 5));
 
 function sumaListas(lista1, lista2) {
+    let sumaL = [];
     if(lista1.length !== lista2.length) {
         return 'Las listas no son del mismo tamaño'
     } else {
-        let suma = [];
         for(i = 0; i < lista1.length; i++) {
-            suma.push = lista1[i] + lista2[i];
+            sumaL.push = lista1[i] + lista2[i];
         }
     }
-    return suma;
+    return sumaL;
 }
+
+console.log(sumaListas(numeros, numeros2));
+
+function cuadrado(lista) {
+    let cuadrados = [];
+    for(i = 0; i < lista.length; i++) {
+        cuadrados.push = Math.pow(lista[i], 2);
+    }
+    return cuadrados;
+}
+
+console.log(cuadrado(numeros2));
