@@ -66,7 +66,7 @@ function sumaListas(lista1, lista2) {
         return 'Las listas no son del mismo tamaño'
     } else {
         for(i = 0; i < lista1.length; i++) {
-            sumaL.push = lista1[i] + lista2[i];
+            sumaL.push(lista1[i] + lista2[i]);
         }
     }
     return sumaL;
@@ -77,7 +77,7 @@ console.log(sumaListas(numeros, numeros2));
 function cuadrado(lista) {
     let cuadrados = [];
     for(i = 0; i < lista.length; i++) {
-        cuadrados.push = Math.pow(lista[i], 2);
+        cuadrados.push(Math.pow(lista[i], 2));
     }
     return cuadrados;
 }
