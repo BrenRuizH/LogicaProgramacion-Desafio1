@@ -1,5 +1,5 @@
 let listaGenerica = [];
-
+let numeros = [5, 15, 10];
 let lenguajesDeProgramacion = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
 
 lenguajesDeProgramacion.push('Java', 'Ruby', 'GoLang');
@@ -21,3 +21,22 @@ function promedio(lista) {
         return valorAn + valorAc;
     }, 0))/lista.length;
 }
+
+console.log(promedio(numeros));
+
+function maxMin(lista) {
+    let max = lista[0];
+    let min = lista[0];
+    for(i = 1; i < lista.length; i++) {
+        if(max < lista[i]) {
+            max = lista[i];
+        }
+        if(min > lista[i]) {
+            min = lista[i];
+        }
+    }
+
+    return `El número máximo es ${max} y el mínimo es ${min}`;
+}
+
+console.log(maxMin(numeros));
