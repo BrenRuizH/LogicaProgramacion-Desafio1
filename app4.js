@@ -17,9 +17,7 @@ function reversa() {
 reversa();
 
 function promedio(lista) {
-    return (lista.reduce((valorAn, valorAc) => {
-        return valorAn + valorAc;
-    }, 0))/lista.length;
+    return (suma(lista))/lista.length;
 }
 
 console.log(promedio(numeros));
@@ -40,3 +38,11 @@ function maxMin(lista) {
 }
 
 console.log(maxMin(numeros));
+
+function suma(lista) {
+    return lista.reduce((valorAn, valorAc) => {
+        return valorAn + valorAc;
+    }, 0);
+}
+
+console.log(suma(numeros));
