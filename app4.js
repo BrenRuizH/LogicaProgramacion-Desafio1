@@ -46,3 +46,14 @@ function suma(lista) {
 }
 
 console.log(suma(numeros));
+
+function posicion(lista, elemento) {
+    for(i = 0; i < lista.length; i++) {
+        if(lista[i] === elemento) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+console.log(posicion(numeros, 5));
