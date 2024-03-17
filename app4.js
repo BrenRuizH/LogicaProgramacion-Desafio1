@@ -9,3 +9,9 @@ function muestra() {
 }
 
 muestra();
+
+function reversa() {
+    return console.log(lenguajesDeProgramacion.reverse());
+}
+
+reversa();
